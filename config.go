@@ -16,4 +16,5 @@ type Configuration struct {
 	EnableBreadcrumbs bool // this feature works only when you explicitly passed new scope
 	FlushTimeout      time.Duration
 	Hub               *sentry.Hub
+	DynamicTags       []string // tags from zap field names
 }
